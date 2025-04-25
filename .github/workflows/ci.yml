@@ -26,15 +26,3 @@ jobs:
 
       - name: Run tests
         run: npm test -- --ci --silent --coverage
-
-      - name: Build the app
-        run: npm run build
-
-      - name: List files (debugging)
-        run: ls -R
-
-      - name: Upload build artifact
-        uses: actions/upload-artifact@v2
-        with:
-          name: build
-          path: build/
