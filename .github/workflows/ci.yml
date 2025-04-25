@@ -27,10 +27,4 @@ jobs:
       - name: Run tests
         run: npm test -- --ci --silent --coverage
 
-      - name: Build the app
-        run: npm run build
-
-      - name: List files (debugging)
-        run: ls -R
-
-
+      
